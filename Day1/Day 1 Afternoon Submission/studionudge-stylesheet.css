@@ -1,0 +1,19 @@
+* {
+	text-align: center;
+}
+p {
+	font-family: "freight-display-pro", sans-serif;
+	font-size: 36px;
+}
+thead {
+	font-family: Arial;
+}
+span {
+	font-size: 36px;
+	font-family: cursive;
+	font-weight: bold;
+	text-align: left;
+}
+img {
+	text-align: left;
+}
