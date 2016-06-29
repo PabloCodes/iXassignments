@@ -1,0 +1,56 @@
+* {
+	background: orange;
+	color: white;
+	font-family: "Open Sans", Sans-serif;
+}
+p {
+	font-color: white;
+}
+hr {
+	color: white;
+}
+
+img {
+	width: 20%;
+	height: 20%;
+	display: inline-block;
+}
+.hero {
+	height: 25%;
+	width: 25%;
+	display: inline-block;
+}
+
+.btn {
+	color: green;
+	background: white;
+	height: 50px;
+	width: 200px;
+}
+.col {
+	display: inline-block;
+}
+.left {
+	display: inline-block;
+	margin-left: 60px;
+}
+.middle {
+	display: inline-block;
+	margin-left: 55px;
+}
+.farLeft {
+	display: inline-block;
+	margin-left: 120px;
+}
+input {
+	background: orange;
+	border: solid white 1px;
+	color: white;
+}
+a {
+	color: green;
+	background: white;
+}
+.center {
+	text-align: center;
+}
