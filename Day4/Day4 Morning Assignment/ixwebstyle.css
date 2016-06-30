@@ -1,0 +1,51 @@
+body {
+	text-align: center;
+}
+.to-front {
+	background: white;
+	z-index: 1;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+}
+.navbar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+.background-img {
+	z-index: 2;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("http://cdn0.ixperience.co.za/assets/parents/neighborhood-d8b301bf74ea20ddf9efaac7ca4ecbfdd8a1b09a5b81e2414f9a587818c18bab.jpg");
+}
+.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.miss {
+	margin-top: 100px;
+	color: white;
+}
+img {
+	width: 80%;
+	border-radius: 100%;
+	margin: 20px 20px;
+}
+.pass > img {
+	width: 100%;
+	border-radius: 100%;
+	margin: 20px 20px;
+}
+a {
+	background: pink;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+}
+@media(max-width: 768px) {
+	img {
+		width: 45%;
+	}
+	.pass > img {
+		width: 30%;
+	}
+}
