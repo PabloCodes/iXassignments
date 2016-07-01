@@ -1,0 +1,42 @@
+* {
+	background: black;
+	color: white;
+}
+.navbar {
+	max-width: 1200px;
+}
+ul {
+	list-style: none;
+}
+li {
+	float: left;
+	padding: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+input {
+	background: white;
+}
+.btn {
+	padding:10px 15px;
+	background: orange;
+	border-radius: 3px
+}
+.gray {
+	color: grey;
+	font-size: 12px;
+}
+@media(max-width: 450px) {
+	.ds {
+		display: none;
+	}
+	.big {
+		width: 25%;
+		display: inline-block;
+	}
+	
+}

@@ -1,0 +1,7 @@
+body {
+	text-align: center;
+}
+.bord {
+	border: 2px solid black;
+	padding: 20px;
+}

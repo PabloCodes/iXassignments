@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+	border: 2px solid orange;
+	font-weight: bolder;
+	font-size: 10px;
+	font-family: Helvetica;
+}
+ul {
+	text-align: center;
+	margin: 0px auto;
+}
+li {
+	list-style: none;
+	float: left;
+	margin: 10px auto;
+	width: 25%;
+	height: 400px;
+}
+li:nth-child(1) {
+	border: 2px solid red;
+}
+li:nth-child(2) {
+	border: 2px dashed yellow;
+}
+li:nth-child(3) {
+	border: 2px dotted green;
+}
+li:nth-child(4) {
+	border: 2px solid blue;
+}
+@media(max-width: 768px) {
+	li {
+		width: 50%;
+	}
+}
+@media(max-width: 480px) {
+	li {
+		width: 100%;
+	}
+}
