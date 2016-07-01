@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.navbar {
+	position: fixed;
+	top: 400px;
+	left: 20px;
+}
+.fill {
+	width: 90%;
+}
+.peep > .fill {
+	width: 70%;
+}

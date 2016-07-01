@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="revamped-style.css">
+	<title>fam</title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="navbar">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="">home</a>
+							<a href="">about me</a>
+							<a href="">kagaonsen</a>
+							<a href="">kanazawa</a>
+							<a href="">tokyo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-10">
+				<div class="fam">
+					<div class="overview">
+						<div class="row">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<h2>About Me</h2>
+								<h4>I am born and raised in New York City. Currently I am pursuing a BA in Biology and a Minor in History at the University of Virginia. In the Fall I will be a 4th year student. </h4>
+							</div>
+							<div class="col-sm-2"></div>
+						</div>
+						<div class="row">
+					 		<div class="col-md-6">
+						 		<div class="col-md-4">
+						 			<div class="peep img">
+						 				<img class="fill" src="https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13442557_10209871213276130_732880335712073599_o.jpg">
+						 			</div>
+						 		</div>
+						 		<div class="col-md-8">
+						 			<div class="peep">
+						 				<h4 class="title">The Bro~~Alejandro "Cazz"</h4>
+						 				<h5>Class:Medic</h5>
+						 				<h5>Weight:183lbs.</h5>
+						 				<h5>Level:23</h5>
+										<h5>Special Attack:Annoying noises</h5>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-4">
+						 			<div class="peep img">
+						 				<img class="fill" src="https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13403790_10209871215396183_1308614581680520521_o.jpg">
+						 			</div>
+						 		</div>						 		
+						 		<div class="col-md-8">
+						 			<div class="peep">
+						 				<h4 class="title">The Dad~~Dana "The Dude"</h4>
+						 				<h5>Class:Engineer</h5>
+						 				<h5>Weight:193lbs.</h5>
+						 				<h5>Level:56</h5>
+						 				<h5>Special Attack1:Thinking he knows where he's going</h5>
+						 				<h5>Special Attack2:Butchering pronunciation</h5>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-4">
+						 			<div class="peep img">
+						 				<img class="fill" src="https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13433131_10209871215876195_1301264177303158344_o.jpg">
+						 			</div>
+						 		</div>
+						 		<div class="col-md-8">
+						 			<div class="peep">
+						 				<h4 class="title">Mommers~~Maria "Chech"</h4>
+						 				<h5>Class:Hybrid Medic/Sensei</h5>
+						 				<h5>Weight:???</h5>
+										<h5>Level:???</h5>
+										<h5>Special Attack1:Scorn</h5>
+										<h5>Special Attack2:Passive Aggression</h5>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-12">
+						 			<a class="btn" onclick="myBattle()"> A Boss battle? Here..? Now!?! Yup.</a>
+										<script>
+										function myBattle() {
+										confirm("Your special attack is 'speed-dial John Cena'")
+										var broFight = prompt("Your mere existence has offended Cazz.(He can get a little aggressive when he's had a few too many) How will you fight back? SPECIAL or REGULAR attack?").toUpperCase();
+											switch(broFight) {
+												case 'SPECIAL' || 'SPECIAL ATTACK':
+													var phoneBattery = prompt("Long-distance calls really kill your battery, What percent is your phone at?")
+													if (phoneBattery >= 30) {
+															prompt("I have no idea how he made it here so fast... but he smacked my brother around like it wasn't nothin");
+														}
+													else 	{
+														prompt("Your phone died before you could convince John Cena to come to your aid. The disappointment overwhelmed your will to fight");
+														}
+												break;				
+												case 'REGULAR' || 'REGULAR ATTACK':	
+													var coordination = prompt("Are you coordinated?").toUpperCase();
+													var hardiness = prompt("Can you take a punch?").toUpperCase();
+													if (coordination === yes && hardiness === yes) {
+														prompt("You whooped his ass! way to go!");
+													}
+													else if (coordination === yes || hardiness === yes) {
+														prompt("Welp it was a close one. I guess middleschool wrestling gave him the upper hand");
+													}	
+													else {
+														prompt("We all love a good underdog story. I think that left hook really caught him offguard. He's been out cold for like 5 minutes haha.");
+													}
+												break;
+												default: 
+													prompt("You ameliorate the situation by buying him another beer. He screeches in excitement.");		
+											}
+										}
+										</script>
+						 		</div>
+					 		</div>
+				 		</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
