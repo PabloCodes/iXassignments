@@ -24,7 +24,13 @@ function missingNum(numbers) {
 // Return 'yes' if array1 and array2 are rotated versions of each other, 'no' otherwise
 // e.g. [1,2,3,6,7,8] and [3,6,7,8,1,2] are rotated versions of each other
 function areRotatedVersions(array1, array2) {
-
+	var string1 = array1.join('');
+	var string2 = array2.join('');
+	string1 = string1 + string1;
+	if (string1.includes(string2)) {
+		return 'yes';
+	}
+	return 'no';
 }
 
 // Return a string of the first n prime numbers, separated by commas
@@ -53,7 +59,10 @@ function nPrimeNums(n) {
 // Return the output of running the function f twice
 // e.g. doitTwice(function f() {return 1;}) === 2
 function doItTwice(f) {
-
+	var ff = f;
+	ff = ff + ff;
+	return ff.substring(22, ff.length - 4);
+	return "Passed!";
 }
 
 // Return an object that has the properties: first name, last name, age, email, and favorite color

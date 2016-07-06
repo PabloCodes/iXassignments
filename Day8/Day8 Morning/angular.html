@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="angular.css">
+</head>
+<body ng-app>
+<!-- when the show names button is clicked, the current names in the form should be printed to the console -->
+	<form id="form1" onsubmit="getFormvalue()">  
+		First name: <input type="text" name="fname" value="David" id="first"><br>  
+		Last name: <input type="text" name="lname" value="Beckham" id="last"><br>  
+	</form>  
+
+	<!-- when the change color button is clicked, the text in this div should turn red -->
+	<div class="change-color" id="color-div" ng-class="{'isRed' : isRed}">
+		Here's a fun little div.
+	</div>
+	<button id="name-btn">Click to show names</button>
+	<button id="color-btn" ng-click="isRed = !isRed">Click to change color</button>
+	<button id="image-btn" ng-click="isVisible = !isVisible">Click to show image</button>
+	
+	<div class="lightbox" id="lightbox" ng-show="isVisible" ng-click="isVisible = !isVisible">
+			<div id="image" class="lightbox-contents">
+				<img src="http://www.lovethispic.com/uploaded_images/53451-Cute-Dog.jpg" alt="">
+			</div>
+			<div id="screen" class="lightbox-bg"></div>
+	</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+</body>
+</html>
