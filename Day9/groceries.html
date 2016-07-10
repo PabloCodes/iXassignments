@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="listApp">
+	<div ng-controller="ListCtrl">
+		<input ng-model="todoName">
+		<input ng-model="dueDate">
+		<button ng-click="addTodo()">Add to List</button>
+		<input placeholder="search" type="text" ng-model="searchBox">
+		<ol>
+			<li ng-repeat="todo in todos | filter: searchBox track by $index">
+				<div ng-hide="todo.isEditing">
+					{{todo.name}}, {{todo.dueDate}}<button ng-click="addOne(todo)">+</button><button ng-click="subtractOne(todo)">-</button><button ng-click="todo.isEditing = true">edit</button>
+					<button ng-click="delete($index)">delete</button>
+				</div>
+			</li>
+		</ol>
+		<div ng-show="todo.isEditing">
+			<input ng-model="todo.name">
+			<span><button ng-click="todo.isEditing = false">done</button></span>
+		</div>
+		<button ng-click="empty(todo)">Empty Cart</button>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="groceries.js"></script>
+</body>
+</html>
