@@ -1,0 +1,8 @@
+<h2>Title: {{ movie.Title }}</h2>
+<h4>Director(s): {{ movie.Director}}</h4>
+<p>Plot: {{ movie.Plot }}</p>
+<ol>
+	<li ng-repeat="g in gifArray">
+		<img src="{{ g.images.fixed_height.url }}">
+	</li>
+</ol>
