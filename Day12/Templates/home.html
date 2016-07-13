@@ -1,0 +1,16 @@
+<div class="top"><h2>{{ChommiesRocks}}</h2></div>
+
+<div ng-show="errorMessage" class="alert alert-danger">
+	{{errorMessage}}
+</div>
+<div><a ng-href="#/myProps">Check my props, bru</a></div>
+<div ng-class="{'isDisabled':isSending}">
+	<select ng-options="bru.id as bru.first_name for bru in brus" ng-model="selectedBru"></select> {{selectedBru}}, 
+	<input ng-model="newPropsValue">
+	<button ng-click="sendProps()">Send Prop</button>
+</div>
+<ol ng-repeat="p in props">
+    <li><strong>@{{p.receiver.id}}:</strong> {{p.text}}</li>
+    <li class="grey">positivity score: {{p.positivity_score}}</li>
+</ol>
+

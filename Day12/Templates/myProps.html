@@ -1,0 +1,8 @@
+<div>These are all of my props</div>
+<div><a ng-href="#/">Go Back!</a></div>
+<ol ng-repeat="prop in myProps">
+	<li>
+		<strong>@{{prop.receiver.id}}</strong> {{prop.text}}
+	</li>
+	<li class="grey">positivity score: {{prop.positivity_score}}</li>
+</ol>

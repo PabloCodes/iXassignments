@@ -1,0 +1,16 @@
+li {
+	list-style: none;
+}
+.isDisabled {
+	opacity: .3;
+	pointer-events: none;
+}
+.grey {
+	color: grey;
+}
+.top {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background: #9D67FF;
+}
