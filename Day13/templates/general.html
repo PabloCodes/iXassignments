@@ -1,0 +1,16 @@
+<div>first channel(general)</div>
+<button ng-click="signOut()">Sign Out</button>
+<a ng-href="#/list">This takes you to yo list</a>
+<div>
+	<input placeholder="message here!" ng-model="newMessage">
+	<button ng-click="makeMessage()">Send</button>
+	<div ng-repeat = "message in messages">									<ol>
+			<li>
+				{{user[message.sender].name}}:{{message.text}}
+			</li>	
+			<li class="small">
+				{{message.created_at | date: 'MM-dd-yy'}}
+			</li>
+		</ol>
+	</div>
+</div>

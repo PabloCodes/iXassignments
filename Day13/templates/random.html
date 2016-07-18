@@ -1,0 +1,10 @@
+<div>I'm Rick James, bitch(random)</div>
+<button ng-click="signOut()">Sign Out</button>
+<a ng-href="#/list">This takes you to yo list</a>
+<div>
+	<input placeholder="message here!" ng-model="newMessage">
+	<button ng-click="makeMessage()">Send</button>
+	<div ng-repeat = "message in messages">							{{message.sender}}:{{message.text}}
+		{{message.created_at}}
+	</div>
+</div>
